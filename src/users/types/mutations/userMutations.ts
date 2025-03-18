@@ -22,4 +22,29 @@ export const userMutations = {
         });
     },
   },
+  updateUser: {
+    type: UserType,
+    description: "Update user information",
+    args: {
+      id: { type: new GraphQLNonNull(GraphQLID) },
+      name: { type: GraphQLString },
+    },
+    async resolve(_: any, args: any) {
+      return await UserModel.findOneAndUpdate(
+        { _id: args.id },
+        { name: args.name },
+        { returnOriginal: false }
+      );
+    },
+  },
+  deleteUser: {
+    type: UserType,
+    description: "Delete an User",
+    args: {
+      id: { type: new GraphQLNonNull(GraphQLID) },
+    },
+    async resolve(_: any, args: any) {
+      return await UserModel.findByIdAndDelete(args.id);
+    },
+  },
 };
