@@ -16,7 +16,7 @@
   "description": "",
   "dependencies": {
     "@koa/router": "^13.1.0",
-    "graphql": "15.3.0",
+    "graphql": "15.10.1",
     "koa": "^2.15.4",
     "koa-bodyparser": "^4.4.1",
     "koa-graphql": "^0.12.0",
