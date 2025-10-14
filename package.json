@@ -21,7 +21,7 @@
     "koa-bodyparser": "^4.4.1",
     "koa-graphql": "^0.12.0",
     "koa-mount": "^4.0.0",
-    "mongoose": "^8.12.1",
+    "mongoose": "^8.18.2",
     "swagger-jsdoc": "^6.2.8"
   },
   "devDependencies": {
